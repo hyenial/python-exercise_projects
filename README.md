@@ -19,8 +19,11 @@ python exercise projects
 ### open youtube
 - - -
 - this is similar as time break program but it makes ger request
-= `python youtube` 
+-`python youtube` 
 
 
 ### profanity checker
 - - -
+- this programs check your words in text document if profanity exits
+- it makes get request for profanity engine
+- `python profanity.py`
