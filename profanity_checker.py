@@ -1,7 +1,7 @@
 import urllib
 
 def read_text():
-    quotes = open("/home/harun/Downloads/movie_quotes (1).txt")
+    quotes = open("movie_quotes (1).txt")
     contents_of_file = quotes.read()
     #print(contents_of_file)
     quotes.close()
