@@ -1,15 +1,15 @@
 # python-exercise
 python exercise projects
 
-# tutrtle 
+### tutrtle 
 
 
 
-# time break
+### time break
 
 
 
-# ope youtube
+### open youtube
 
 
-# profanity checker
+### profanity checker
