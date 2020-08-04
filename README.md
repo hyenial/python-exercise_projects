@@ -11,6 +11,8 @@ python exercise projects
 
 ### time break
 - - -
+- this is basic time break program 
+- python time_break.py
 
 
 
