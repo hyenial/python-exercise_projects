@@ -1,8 +1,11 @@
 # python-exercise
 python exercise projects
 
-### tutrtle 
+### mindstorm.py 
 - - -
+- this is basic python script which makes simple drawing.
+- python turtle is used for drawing fractal
+- run `python mindstorm.py` 
 
 
 
