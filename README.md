@@ -12,18 +12,18 @@ python exercise projects
 ### time break
 - - -
 - this is basic time break program 
-- python time_break.py
+- run `python time_break.py`
 
 
 
 ### open youtube
 - - -
 - this is similar as time break program but it makes ger request
--`python youtube` 
+- run `python youtube` 
 
 
 ### profanity checker
 - - -
 - this programs check your words in text document if profanity exits
 - it makes get request for profanity engine
-- `python profanity.py`
+- `python profanity_checker.py`
