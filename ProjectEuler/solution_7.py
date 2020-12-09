@@ -23,4 +23,4 @@ def nthPrime(n):
 
 print(nthPrime(10001))
   
-# referance : https://github.com/nayuki/Project-Euler-solutions
+# referance : https://code.mikeyaworski.com/python/project_euler/problem_7
