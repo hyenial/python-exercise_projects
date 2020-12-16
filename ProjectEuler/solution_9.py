@@ -9,10 +9,10 @@ Find the product abc.
 
 '''
 
-for a in range(3, 1000):
+for a in range(1, 1000):
     for b in range (a + 1, 999):
-        cSquared = a**2 + b**2
-        c = cSquared**0.5
+        cSq = a**2 + b**2
+        c = cSq**0.5
 
         if a + b + c == 1000:
             product = a * b * c
