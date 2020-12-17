@@ -43,3 +43,4 @@ if __name__ == '__main__':
 
 # referance : https://gist.github.com/yelluw/f24b0c4020b479b37eeb7ff7e44eca7e
 # https://repl.it/@harunyen/q10
+# <iframe height="400px" width="100%" src="https://repl.it/@harunyen/q10?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
