@@ -42,3 +42,4 @@ if __name__ == '__main__':
 
 
 # referance : https://gist.github.com/yelluw/f24b0c4020b479b37eeb7ff7e44eca7e
+# https://repl.it/@harunyen/q10
