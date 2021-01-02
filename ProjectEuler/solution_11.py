@@ -28,3 +28,89 @@ The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
 """
+#As the matrix is in string format
+#First we are splitting it row wise
+numbers = numbers.strip().split('\n')
+
+#Once split row wise we are splitting it column wise also
+#We are also converting the
+#the items in matrix to int using map
+numbers = [map(int,x.strip().split(' ')) for x in numbers]
+
+
+def greatest_product(a):
+	"""
+	This function will take a matrix as input and then output
+	the largest product that is possible in the Matrix
+	Example: Consider
+	a = [[40, 62, 76, 36],
+	 	 [74, 04, 36, 16],
+	 	 [23, 57, 05, 54],
+	 	 [89, 19, 67, 48]]
+	 ""ROW WISE CALCULATIONS""	 
+	 In the first for loop we are calculating the values of
+	 40*62*76*36, 74*04*36*16, 23*57*05*54,89*19*67*48
+	 using iterations and then for every value generated 
+	 we are checking if the value of the multiple is 
+	 greater than 'largest'. If yes change its value
+	 ""COLUMN WISE CALCULATIONS""
+	 In the second for loop we are calculating the values of
+	 40*74*23*89, 62*04*57*19, 76*36*05*67, 36*16*54*48
+	 and if any of these values is greater than the 
+	 'largest' value then we will change it.
+	 ""DIAGONAL CALCULATIONS""
+	 In the third for loop, the diagonal calculations are 
+	 40*04*05*48, 36*36*57*89.
+	 If any of the values is greater than the previous value 
+	 of 'largest' then it will be changed
+	 Finally the value of largest is returned
+	"""
+	largest = 0
+	for i in a:
+		multiple = reduce(lambda x,y:x*y,i)
+		if multiple > largest:
+			largest = multiple
+	for j in xrange(len(a)):
+		multiple = 1
+		for k in xrange(len(a)):
+			multiple = multiple*a[k][j]
+		if multiple > largest:
+			largest = multiple
+	multiple = 1
+	right_dia = 1
+	for k in xrange(len(a)):
+		multiple = multiple*a[k][k]
+		right_dia *= a[len(a)-1-k][k]
+	if multiple > largest:
+		largest = multiple
+	if right_dia > largest:
+		largest = right_dia
+	return largest
+
+#A list to store the values of sub matrices
+a = []
+
+#For loop for generating sub matrices
+#Try to understand this by considering a small
+#example similar to the function above.
+for i in range(len(numbers)-3):
+	for j in range(len(numbers[0])-3):
+		sub = []
+		sub.append(numbers[i][j:j+4])
+		sub.append(numbers[i+1][j:j+4])
+		sub.append(numbers[i+2][j:j+4])
+		sub.append(numbers[i+3][j:j+4])
+		a.append(sub)
+
+#Applying the greatest_product function 
+# to all of the sub matrices
+a = map(greatest_product,a)
+
+#printing the biggest number in the list
+print max(a)
+
+#Total time taken for execution
+print time.time() - start
+
+# referance : https://gist.github.com/Anivarth/26fef0a19ebe9ad58754b90e61193b0f
+# thank you Anivarth
