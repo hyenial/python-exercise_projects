@@ -103,3 +103,14 @@ Work out the first ten digits of the sum of the following one-hundred 50-digit n
 53503534226472524250874054075591789781264330331690
 
 '''
+
+result_sum = []
+tmp_sum = 0
+for j in xrange(50):
+    for i in xrange(100):
+        tmp_sum += nums[i] % 10
+        nums[i] =nums[i] / 10
+    result_sum.insert(0,int(tmp_sum % 10))
+    tmp_sum = tmp_sum / 10
+for i in xrange(10):
+    print result_sum[i]
