@@ -6,3 +6,14 @@ question 16.
 What is the sum of the digits of the number 2**1000?
 '''
 
+import math
+
+def sumOfDigit(num):
+    sum_of_digits = 0
+    while num > 9:
+        sum_of_digits += num % 10
+        num = int(num/10)
+    sum_of_digits += num
+    return sum_of_digits
+
+print sumOfDigit(math.pow(2,1000))
