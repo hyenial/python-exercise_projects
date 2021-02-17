@@ -78,3 +78,5 @@ def numberLetters(num):
 for i in range(1,1001):
     addList.append(len(numberLetters(i)))
 print(sum(addList))
+
+# https://repl.it/@harunyen/euler17
