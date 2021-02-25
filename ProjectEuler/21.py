@@ -48,3 +48,5 @@ for i in range(1, 10000):
 
 print sum(s)
 
+# answer : 31626
+
