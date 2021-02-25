@@ -34,7 +34,7 @@ def amicable_number(x):
 
 amicable_num_result = amicable_number(10000)
 
-# secand way
+# second way
 def d(n):
     return sum(x for x in range(1, n // 2 + 1) if not (n % x))
 
