@@ -45,10 +45,10 @@ for i in xrange(10,1854721):
 		solution += i
 
 #printing the solution
-print solution
+print (solution)
 
 #Time at the end of program execution
 end = time.time()
 
 #total time of execution
-print end - start
+print (end - start)
