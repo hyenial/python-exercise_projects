@@ -32,4 +32,4 @@ print solution
 end = time.time()
 
 #printing the execution time
-print end - start
+print (end - start)
