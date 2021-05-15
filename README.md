@@ -1,5 +1,5 @@
 # python-exercise
-python exercise projects
+this folder includes some python exercise projects and Project euler solutions. 
 
 ### mindstorm.py 
 - - -
