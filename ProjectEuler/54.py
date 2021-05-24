@@ -27,6 +27,7 @@ Hand	 	Player 1	 	Player 2	 	Winner
 1	 	5H 5C 6S 7S KD
 Pair of Fives
  	2C 3S 8S 8D TD
+  
 Pair of Eights
  	Player 2
 2	 	5D 8C 9S JS AC
@@ -38,6 +39,7 @@ Highest card Queen
 Three Aces
  	3D 6D 7D TD QD
 Flush with Diamonds
+
  	Player 2
 4	 	4D 6S 9H QH QC
 Pair of Queens
