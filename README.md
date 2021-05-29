@@ -12,7 +12,7 @@ this folder includes some python exercise projects and Project euler solutions.
 ### time break
 - - -
 - this is basic time break program 
-- run `python time_break.py`
+- run `python time_break.py`.
 
 
 
