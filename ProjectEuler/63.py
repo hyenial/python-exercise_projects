@@ -6,6 +6,7 @@ How many n-digit positive integers exist which are also an nth power?
 '''
 
 # http://radiusofcircle.blogspot.com
+# https://replit.com/@harunyen/SolidUnawareOpentracker#main.py
 
 # import time module
 import time
