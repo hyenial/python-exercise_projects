@@ -3,19 +3,45 @@ https://projecteuler.net/problem=64
 
 '''
 
-
 # http://radiusofcircle.blogspot.com
-def continued_fraction(n):
-    """
-    This function will calculate
-    Continued fraction of a given number"""
-    integer = int(n)
-    decimal = n - integer
-    cf_list = [integer]
-    if decimal != 0:
-        while integer != 2*cf_list[0]:
-            decimal_inv = 1/decimal
-            integer = int(decimal_inv)
-            decimal = decimal_inv - integer
-            cf_list.append(integer)
-    return cf_list
+
+#import time
+import time
+
+# square root function
+from math import sqrt
+
+# time at the start of program execution
+start = time.time()
+
+# function to calculate the continued fraction
+def cf(n):
+    mn = 0.0
+    dn = 1.0
+    a0 = int(sqrt(n))
+    an = int(sqrt(n))
+    period = 0
+    if a0 != sqrt(n):
+        while an != 2*a0:
+            mn = dn*an - mn
+            dn = (n - mn**2)/dn
+            an = int((a0 + mn)/dn)
+            period += 1
+    return period
+
+# counter
+counter = 0
+
+# for loop from 0 to 10000
+for i in xrange(10000):
+    if cf(i) % 2 != 0:
+        counter += 1
+
+# number of instances
+print counter
+
+# time at the end of program execution
+end = time.time()
+
+# total time taken to run the program
+print end - start
