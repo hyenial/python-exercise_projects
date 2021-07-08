@@ -28,3 +28,46 @@ There is an efficient algorithm to solve it. ;o)
 </html>
 
 '''
+
+#http://radiusofcircle.blogspot.com
+
+#importing time module 
+import time
+
+#time at the start of execution
+start = time.time()
+
+with open('p67triangle.txt') as f:
+	# All the numbers in the file
+	number = f.read()
+
+#splitting the number into a list
+number = number.strip().split('\n')
+
+#converting each and every list of strings to int
+for i in xrange(1,len(number)):
+	number[i] = number[i].strip().split(' ')
+	number[i] = [int(x) for x in number[i]]
+
+#adding the first number bcz we could not do the above
+#operation as this one one number
+number[0] = [59]
+
+#counter for counting number of iterations
+counter = 0
+
+#for loop for bottom-up approach
+for i in xrange(len(number)-2,-1,-1):
+	for j in xrange(len(number[i])):
+		number[i][j] = number[i][j] + max(number[i+1][j], number[i+1][j+1])
+		counter += 1
+	number.pop()
+
+#printing the output
+print 'Found {} in {} iterations'.format(number[0][0],counter)
+
+#time at the end of execution
+end = time.time()
+
+#printing the total time
+print end-start
