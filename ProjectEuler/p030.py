@@ -11,3 +11,28 @@ The sum of these numbers is 1634 + 8208 + 9474 = 19316.
 Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 
 """
+
+#http://radiusofcircle.blogspot.com
+
+#time module for calculating execution time
+import time
+
+#time at the start of program execution
+start = time.time()
+
+#Let the sum be 0 at the start
+solution = 0
+
+#for loop to loop till 5(10-1)^5
+for i in xrange(2,5*9**5+1):
+	if sum([int(x)**5 for x in str(i)]) == i:
+		solution += i
+
+#printing the solution
+print solution
+
+#time at the end of execution
+end = time.time()
+
+#printing the total execution time
+print end - start
