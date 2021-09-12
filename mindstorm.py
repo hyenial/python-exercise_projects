@@ -21,3 +21,5 @@ window.bgcolor("blue")
 draw_art()
 
 window.exitonclick()
+
+#https://replit.com/@harunyen/turtle#main.py
