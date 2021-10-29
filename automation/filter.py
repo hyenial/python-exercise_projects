@@ -12,3 +12,5 @@ adults = filter(myFunc, ages)
 
 for x in adults:
   print(x)
+  
+  # 18 24 32
