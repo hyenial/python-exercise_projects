@@ -1,3 +1,5 @@
+# it returns number according to criteria
+
 ages = [5, 12, 17, 18, 24, 32]
 
 def myFunc(x):
