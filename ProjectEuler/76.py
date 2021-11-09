@@ -1,5 +1,5 @@
 '''
-It is possible to write five as a sum in exactly six different ways:
+It is possible to write five as a sum in exactly six different ways:,
 
 4 + 1
 3 + 2
