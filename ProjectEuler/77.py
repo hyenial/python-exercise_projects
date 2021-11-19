@@ -13,8 +13,6 @@ What is the first value which can be written as the sum of primes in over five t
 '''
 # 
 # Solution to Project Euler problem 77
-# Copyright (c) Project Nayuki. All rights reserved.
-# 
 # https://www.nayuki.io/page/project-euler-solutions
 # https://github.com/nayuki/Project-Euler-solutions
 # 
@@ -44,7 +42,3 @@ def num_prime_sum_ways(n):
 
 if __name__ == "__main__":
 	print(compute())
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
