@@ -8,7 +8,7 @@
 <p>At the beginning of the game, the CC and CH cards are shuffled. When a player lands on CC or CH they take a card from the top of the respective pile and, after following the instructions, it is returned to the bottom of the pile. There are sixteen cards in each pile, but for the purpose of this problem we are only concerned with cards that order a movement; any instruction not concerned with movement will be ignored and the player will remain on the CC/CH square.</p>
 <ul><li>Community Chest (2/16 cards):
 <ol><li>Advance to GO</li>
-<li>Go to JAIL</li>
+<li>Go to JAIL,</li>
 </ol></li>
 <li>Chance (10/16 cards):
 <ol><li>Advance to GO</li>
